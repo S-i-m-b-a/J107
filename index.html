@@ -10,6 +10,69 @@
       <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
+      <!-- Font Awesome for WhatsApp icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <style>
+         /* WhatsApp icon styling */
+         .whatsapp-icon {
+            position: fixed; /* Make it float */
+            top: 70px; /* Distance from the top */
+            right: 20px; /* Distance from the right */
+            z-index: 1001; /* Ensure it's above other elements */
+            background-color: #25D366; /* WhatsApp green background */
+            border-radius: 50%; /* Make it circular */
+            width: 50px; /* Set width */
+            height: 50px; /* Set height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+         }
+         .whatsapp-icon a {
+            color: white; /* Icon color */
+            font-size: 24px; /* Icon size */
+            text-decoration: none;
+         }
+         .whatsapp-icon:hover {
+            background-color: #128C7E; /* Darker green on hover */
+         }
+
+         /* Mobile-specific styles */
+         @media (max-width: 767.98px) {
+            /* Ensure the sliding images are the base layer */
+            #header {
+               position: relative;
+               z-index: 1; /* Lower z-index for the sliding images */
+            }
+
+            /* Ensure the logo and text are on top of the sliding images */
+            .navbar-brand,
+            .vcenter {
+               position: relative;
+               z-index: 1000; /* Higher z-index to appear on top */
+            }
+
+            /* Adjust layout for mobile */
+            .span12 {
+               display: flex;
+               flex-direction: column;
+            }
+            .col-md-6 {
+               width: 100%;
+            }
+            .col-md-6.no-gutter.text-center.fill {
+               order: 2; /* Text and logo will appear after the sliding images */
+            }
+            .col-md-6.no-gutter.text-center {
+               order: 1; /* Sliding images will appear first */
+            }
+            .vcenter {
+               text-align: left; /* Align text to the left */
+               margin-top: 20px;
+            }
+         }
+      </style>
+      </style>
    </head>
    <body>
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -22,27 +85,33 @@
                </button>
             </div>
             <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="logo" width="213" height="115" class="logo">
+            <img src="img/logo.png" alt="logo" >
             </a>
             <div class="nav-content hideNav hidden">
                <ul class="nav-list vcenter">
                   <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
                   <li class="nav-item"><a class="item-anchor" href="about.html">About Us</a></li>
                   <li class="nav-item"><a class="item-anchor" href="portfolio.html">Portfolio</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="contact.html">Contact</a></li>
+                  
                </ul>
             </div>
          </div>
       </nav>
+      <!-- WhatsApp icon and link -->
+      <div class="whatsapp-icon">
+         <a href="https://wa.me/yourphonenumber" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+         </a>
+      </div>
       <!-- Header -->
       <div class="span12">
+         <!-- Text and logo -->
          <div class="col-md-6 no-gutter text-center fill">
            <h2 class="vcenter">Redemption Studio 107</h2>
-           
-			 
-           <h5 class="vcenter">The Redemption team is innovative and skilled, producing unique, investment furniture pieces that elevate the interior and exterior spaces that you like to spend time in with family, friends and colleagues.</h5>
-<p>&nbsp;</p>
+           <h5 class="vcenter col-md-offset-1 col-md-10">The Redemption team is innovative and skilled, producing unique, investment furniture pieces that elevate the interior and exterior spaces that you like to spend time in with family, friends and colleagues.</h5>
+           <p>&nbsp;</p>
          </div>
+         <!-- Sliding images -->
          <div class="col-md-6 no-gutter text-center">
             <div id="header" data-speed="2" data-type="background">
                <div id="headslide" class="carousel slide" data-ride="carousel">
@@ -59,7 +128,7 @@
                      <div class="item">
                         <img src="img/2.jpg" alt="Slide">
                      </div>
-					  <div class="item">
+                     <div class="item">
                         <img src="img/6.jpg" alt="Slide">
                      </div>
                   </div>

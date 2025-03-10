@@ -7,11 +7,50 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <title>Redemption Studio 107</title>
-      <!-- Css -->
+	   <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
+      <!-- Font Awesome for WhatsApp icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <style>
+         /* WhatsApp icon styling */
+         .whatsapp-icon {
+            position: fixed; /* Make it float */
+            top: 100px; /* Adjusted to place it slightly lower */
+            right: 20px; /* Distance from the right */
+            z-index: 1001; /* Ensure it's above other elements */
+            background-color: #25D366; /* WhatsApp green background */
+            border-radius: 50%; /* Make it circular */
+            width: 50px; /* Set width */
+            height: 50px; /* Set height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+         }
+         .whatsapp-icon a {
+            color: white; /* Icon color */
+            font-size: 24px; /* Icon size */
+            text-decoration: none;
+         }
+         .whatsapp-icon:hover {
+            background-color: #128C7E; /* Darker green on hover */
+         }
+
+         /* Ensure no overflow issues */
+         body {
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+         }
+      </style>
    </head>
    <body>
+      <!-- WhatsApp icon and link -->
+      <div class="whatsapp-icon">
+         <a href="https://wa.me/yourphonenumber" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+         </a>
+      </div>
+
       <nav class="navbar navbar-default color-fill navbar-fixed-top">
          <div class="col-md-12">
             <div class="nav">
@@ -29,19 +68,27 @@
                   <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
                   <li class="nav-item"><a class="item-anchor" href="about.html">About Us</a></li>
                   <li class="nav-item"><a class="item-anchor" href="portfolio.html">Portfolio</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="contact.html">Contact</a></li>
+                  
                </ul>
             </div>
          </div>
       </nav>
+	   <div class="whatsapp-icon">
+         <a href="https://wa.me/yourphonenumber" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+         </a>
+      </div>
       <section id="about">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <h1>
-                     About Us
+                     Contact Us Today!
+                     <h4><a href="mailto:redempionstudio107@gmail.com.com">RedemptionStudio107@gmail.com</a></h4>
                      <br>
-                     
+                     <h1>
+                        About Us
+                     </h1>
                   </h1>
                   <br>
                   <img class="img-responsive margin-top-45" src="img/5.jpg" alt="me">
@@ -55,12 +102,11 @@
                <div class="col-md-9">
                   <p>
                      Our passion for wood focused furniture started over a decade ago. Our skilled team uses this experience to source only the very best raw materials to design and manufacture unique, statement furniture pieces for individuals, homes, restaurants, lodges and hotels.
-					 We are based in Centurion, South Africa, making us ideally situated to distribute across Gauteng, South Africa and beyond.
-					 Our vision is to translate nature`s unique images into functional, eye-catching, investment furniture pieces. 
+                     We are based in Centurion, South Africa, making us ideally situated to distribute across Gauteng, South Africa and beyond.
+                     Our vision is to translate nature`s unique images into functional, eye-catching, investment furniture pieces. 
                   </p>
+				   <p> inspired by Psalms 107 and John 1:1-4</p>
                   <br>
-                  
-                  </div>
                </div>
             </div>
          </div>
