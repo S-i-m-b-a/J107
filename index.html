@@ -15,44 +15,46 @@
       <style>
          /* WhatsApp icon styling */
          .whatsapp-icon {
-            position: fixed; /* Make it float */
-            top: 70px; /* Distance from the top */
-            right: 20px; /* Distance from the right */
-            z-index: 1001; /* Ensure it's above other elements */
-            background-color: #25D366; /* WhatsApp green background */
-            border-radius: 50%; /* Make it circular */
-            width: 50px; /* Set width */
-            height: 50px; /* Set height */
+            position: fixed;
+            top: 120px; /* Increased from 70px to 120px to move it lower */
+            left: 20px;
+            z-index: 1001;
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
          }
          .whatsapp-icon a {
-            color: white; /* Icon color */
-            font-size: 24px; /* Icon size */
+            color: white;
+            font-size: 24px;
             text-decoration: none;
          }
          .whatsapp-icon:hover {
-            background-color: #128C7E; /* Darker green on hover */
+            background-color: #128C7E;
          }
-
+         /* Reduce space between logo and text */
+         .col-md-6.no-gutter.text-center.fill {
+            padding-top: 0;
+            margin-top: -20px; /* Moves text closer to logo */
+         }
+         .vcenter {
+            margin-top: -10px !important; /* Reduces extra space */
+         }
          /* Mobile-specific styles */
          @media (max-width: 767.98px) {
-            /* Ensure the sliding images are the base layer */
             #header {
                position: relative;
-               z-index: 1; /* Lower z-index for the sliding images */
+               z-index: 1;
             }
-
-            /* Ensure the logo and text are on top of the sliding images */
             .navbar-brand,
             .vcenter {
                position: relative;
-               z-index: 1000; /* Higher z-index to appear on top */
+               z-index: 1000;
             }
-
-            /* Adjust layout for mobile */
             .span12 {
                display: flex;
                flex-direction: column;
@@ -61,16 +63,14 @@
                width: 100%;
             }
             .col-md-6.no-gutter.text-center.fill {
-               order: 2; /* Text and logo will appear after the sliding images */
+               order: 2;
             }
             .col-md-6.no-gutter.text-center {
-               order: 1; /* Sliding images will appear first */
+               order: 1;
             }
-
-            /* Center-align text for mobile view */
             .vcenter {
-               text-align: center; /* Center-align text */
-               margin-top: 20px;
+               text-align: center;
+               margin-top: 10px;
             }
          }
       </style>
@@ -91,8 +91,8 @@
             <div class="nav-content hideNav hidden">
                <ul class="nav-list vcenter">
                   <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="about.html">About Us</a></li>
                   <li class="nav-item"><a class="item-anchor" href="portfolio.html">Portfolio</a></li>
+				   <li class="nav-item"><a class="item-anchor" href="contact.html">Contact Us</a></li>
                </ul>
             </div>
          </div>
@@ -107,9 +107,15 @@
       <div class="span12">
          <!-- Text and logo -->
          <div class="col-md-6 no-gutter text-center fill">
-           <h2 class="vcenter">Redemption Studio 107</h2>
-           <h5 class="vcenter col-md-offset-1 col-md-10">The Redemption team is innovative and skilled, producing unique, investment furniture pieces that elevate the interior and exterior spaces that you like to spend time in with family, friends and colleagues.</h5>
-           <p>&nbsp;</p>
+            <h2 class="vcenter">Redemption Studio 107</h2>
+           <h5 class="vcenter col-md-offset-1 col-md-10"><br>
+           </h5>
+           <h5 class="vcenter col-md-offset-1 col-md-10"> The Redemption team is innovative and skilled, producing unique, investment furniture pieces that elevate the interior and exterior spaces that you like to spend time in with family, friends and colleagues. </h5>
+            <h5 class="vcenter col-md-offset-1 col-md-10">&nbsp;</h5>
+            <h5 class="vcenter col-md-offset-1 col-md-10"> Our passion for wood-focused furniture started over a decade ago. Our skilled team uses this experience to source only the very best raw materials to design and manufacture unique, statement furniture pieces for individuals, homes, restaurants, lodges, and hotels.&nbsp;</h5>
+<h5 class="vcenter col-md-offset-1 col-md-10">&nbsp;We are based in Centurion, South Africa, making us ideally situated to distribute across Gauteng, South Africa, and beyond.
+              Our vision is to translate nature’s unique images into functional, eye-catching, investment furniture pieces. 
+              Inspired by Psalms 107 and John 1:1-4. </h5>
          </div>
          <!-- Sliding images -->
          <div class="col-md-6 no-gutter text-center">
