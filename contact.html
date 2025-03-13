@@ -8,7 +8,105 @@
       <meta name="author" content="">
       <title>Redemptio Studio 107</title>
       <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet"><!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Redemptio Studio 107</title>
+      <!-- Css -->
       <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <!-- Font Awesome for WhatsApp icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <style>
+         /* WhatsApp icon styling */
+         .whatsapp-icon {
+            position: fixed; /* Make it float */
+            top: 120px; /* Adjusted to place it slightly lower */
+            left: 20px; /* Position from the left */
+            z-index: 1001; /* Ensure it's above other elements */
+            background-color: #25D366; /* WhatsApp green background */
+            border-radius: 50%; /* Make it circular */
+            width: 50px; /* Set width */
+            height: 50px; /* Set height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+         }
+         .whatsapp-icon a {
+            color: white; /* Icon color */
+            font-size: 24px; /* Icon size */
+            text-decoration: none;
+         }
+         .whatsapp-icon:hover {
+            background-color: #128C7E; /* Darker green on hover */
+         }
+
+         /* Ensure no overflow issues */
+         body {
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+         }
+      </style>
+   </head>
+   <body>
+      <!-- WhatsApp icon and link -->
+      <div class="whatsapp-icon">
+         <a href="https://wa.me/+27605510571" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+         </a>
+      </div>
+
+      <nav class="navbar navbar-default color-fill navbar-fixed-top">
+         <div class="col-md-12">
+            <div class="nav">
+               <button class="btn-nav">
+               <span class="icon-bar top"></span>
+               <span class="icon-bar middle"></span>
+               <span class="icon-bar bottom"></span>
+               </button>
+            </div>
+            <a class="navbar-brand" href="index.html">
+            <img class="logo" src="img/logo.png" alt="logo">
+            </a>
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="about.html">About Us</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="portfolio.html">Portfolio</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1>
+                     Contact Us Today!
+                  </h1>
+                  <h4><a href="mailto:hello@echoestemplate.com">RedemptionStudio107@gmail.com</a></h4>
+               </div>
+            </div>
+            <div class="row margin-top-45">
+               <div class="col-md-12">
+                  <img class="img-responsive margin-top-45" src="img/7.jpg" alt="me">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- script -->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
